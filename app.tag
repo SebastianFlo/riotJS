@@ -72,3 +72,27 @@
 		}
 	</script>
 </trim>
+
+<app>
+	<h2>Rice Recipe</h2>
+	
+	<ingredient name="Butter" ammount="4 Tbsp"></ingredient>
+	<ingredient name="Marshmallow" ammount="29 oz"></ingredient>
+	<ingredient name="Sugar" ammount="4 cuprs"></ingredient>
+	
+</app>
+
+<ingredient>
+	
+	<label>
+		<input type="checkbox" onchange="{ onCheck }">
+		{ opts.name }
+	</label>
+	<span>{ opts.amount }</span>
+	
+	<script>
+		this.onCheck = function(e){
+			this.added = e.target.checked;
+		}
+	</script>
+</ingredient>
